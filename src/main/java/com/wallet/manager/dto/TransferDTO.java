@@ -14,7 +14,7 @@ public class TransferDTO {
     @ApiModelProperty(value = "R of the customer", required = true, example = "506c8b894ea86a36b20ca47e155f687734dee3c1b701a136478a09d5b5497dd4")
     @NotBlank(message = "Surname can not be null")
 	private String recipientHash;
-    @ApiModelProperty(value = "Funds to transfer", required = true, example = "100.00")
+    @ApiModelProperty(value = "Funds to transfer (with always two decimals places)", required = true, example = "100.25")
 	@Min(value = 0, message = "Min transfer funds amount is 0.00")
 	private BigDecimal funds;
 	

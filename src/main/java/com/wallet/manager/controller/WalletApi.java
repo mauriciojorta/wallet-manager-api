@@ -18,6 +18,7 @@ import com.wallet.manager.dto.WalletDTO;
 import com.wallet.manager.exception.BadRequestException;
 import com.wallet.manager.exception.NotFoundException;
 
+import io.swagger.annotations.ApiParam;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
@@ -33,7 +34,11 @@ public interface WalletApi {
     })
     @CrossOrigin(origins = Constants.ALLOWED_CORS_URL)
     @GetMapping
-    ResponseEntity<List<WalletDTO>> getCustomerWallets(@RequestParam(required= true) String email) throws NotFoundException;
+    ResponseEntity<List<WalletDTO>> getCustomerWallets(  @ApiParam(
+    	    name =  "email",
+    	    value = "Email of the customer",
+    	    example = "example@email.com",
+    	    required = true) @RequestParam(required= true) String email) throws NotFoundException;
 
     @Operation(description = "Transfer funds between two wallets")
     @ApiResponses( value = {

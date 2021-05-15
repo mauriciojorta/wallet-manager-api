@@ -12,7 +12,7 @@ public class WalletDTO {
     @ApiModelProperty(value = "Name of the wallet", required = true, example = "Example wallet")
 	private String name;
 	
-    @ApiModelProperty(value = "Balance of the wallet", required = true, example = "100.00")
+    @ApiModelProperty(value = "Balance of the wallet", required = true, example = "100.25")
 	private BigDecimal balance;
 	
 
