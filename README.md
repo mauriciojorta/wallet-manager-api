@@ -70,7 +70,7 @@ Then, create a MongoDB 4.0 database named wallet-manager (for example, on your l
   "_class": "com.wallet.manager.model.Wallet"
 }]
 ```
-Once you have created enough documents, modify the MongoDB properties from the **application.properties** file of both src/main/resources and src/test/resource to use your custom connection. Then, you can safely compile and package the app as a jar with the Maven command *mvn clean package* and run it by default on [http://localhost:8080/api/v1](http://localhost:8080/api/v1). 
+Once you have created enough documents, modify the MongoDB properties from the **application.properties** file of both src/main/resources and src/test/resources to use your custom connection. Then, you can safely compile and package the app as a jar with the Maven command *mvn clean package* and run it by default on [http://localhost:8080/api/v1](http://localhost:8080/api/v1). 
 
 To test it, you can use the auto-generated Swagger documentation available on [http://localhost:8080/api/v1/swagger-ui/index.html](http://localhost:8080/api/v1/swagger-ui/index.html) or a tool such as **Postman**.
 
