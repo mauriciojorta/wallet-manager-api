@@ -1,9 +1,14 @@
 package com.wallet.manager.dto;
 
+import io.swagger.annotations.ApiModelProperty;
+
 public class CustomerDTO {
 	
+    @ApiModelProperty(value = "Name of the customer", required = true, example = "John")
     private String name;
+    @ApiModelProperty(value = "Surname of the customer", required = true, example = "Doe")
     private String surname;
+    @ApiModelProperty(value = "Email of the customer", required = true, example = "example@email.com")
     private String email;
     
 	public String getName() {
