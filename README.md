@@ -10,7 +10,7 @@ The API is developed with **Java 11** and the **Spring Boot** framework as a **M
 
 First make sure to install Java 11 and Maven in your system and verify that the latter uses Java 11 with *mvn --version*.
 
-Then, create a MongoDB 4.0 database named wallet-manager (for example, on your local environment or with a Cloud service such as [**Cloud Atlas**](https://www.mongodb.com/cloud)) with the following collections: customers and wallets. You should create documents for each one of them like those from these examples:
+Then, create a MongoDB 4.0 database named wallet-manager (for example, on your local environment or with a Cloud service such as [**Cloud Atlas**](https://www.mongodb.com/cloud) with the following collections: customers and wallets. You should create documents for each one of them like those from these examples:
 
 * **customers**
    
@@ -70,8 +70,8 @@ Then, create a MongoDB 4.0 database named wallet-manager (for example, on your l
   "_class": "com.wallet.manager.model.Wallet"
 }]
 ```
-Once you have created enough documents, modify the MongoDB properties from the **application.properties** file of both src/main/resources and src/test/resources to use your custom connection. Then, you can safely compile and package the app as a jar with the Maven command *mvn clean package* and run it by default on [http://localhost:8080/api/v1](http://localhost:8080/api/v1). 
+Once you have created enough documents, modify the MongoDB properties from the **application.properties** file of both src/main/resources and src/test/resource to use your custom connection. Then, you can safely compile and package the app as a jar with the Maven command *mvn clean package* and run it by default on [http://localhost:8080/api/v1](http://localhost:8080/api/v1). 
 
-To test it, you can use the auto-generated Swagger documentation available on [http://localhost:8080/api/v1/swagger-ui/index.html](http://localhost:8080/api/v1/swagger-ui/index.html) or a tool such as **Postman**.
+To test it, you can use the auto-generated Swagger documentation available on [http://localhost:8080/api/v1/swagger-ui/index.html](http://localhost:8080/api/v1/swagger-ui/index.html) or with a tool such as **Postman**.
 
 
