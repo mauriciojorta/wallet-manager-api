@@ -5,15 +5,16 @@ import java.math.BigDecimal;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.CompoundIndex;
+import org.springframework.data.mongodb.core.index.IndexDirection;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document("wallets")
-@CompoundIndex(name = "customer_wallet_idx", def = "{'customerId' : 1, 'hash' : 1}", unique=true)
 public class Wallet {
 	@Id
 	private String id;
 	
+    @Indexed(direction = IndexDirection.ASCENDING)
 	private ObjectId customerId;
 	
 	@Indexed(unique= true)
