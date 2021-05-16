@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.wallet</groupId>
 	<artifactId>wallet-manager</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>wallet-manager</name>
 	<description>Wallet manager API</description>
 	<properties>
